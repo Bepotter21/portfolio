@@ -134,6 +134,7 @@ html {
 }
 
 .titulo-galeria{
+  display: flex;
   padding: 0.5rem;
   background: #2c2c2c;
   border: inset rgba(14, 11, 11, 0.6);
@@ -141,6 +142,11 @@ html {
   margin: 0 auto;
   color: #FFFFFF;
   margin-top: 1vw;
+  justify-content: center;
+}
+
+a {
+  text-align: center;
 }
 
 .container-bc {
