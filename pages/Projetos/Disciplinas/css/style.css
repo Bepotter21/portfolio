@@ -1,0 +1,106 @@
+input, label{
+    margin: 3px;
+    font-size: 16pt;
+}
+.botao{
+    margin-left:70px;
+    width:300px;
+    height:50px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+html {
+    height: 100%;
+    margin: 0 auto;
+}
+body{
+    background: rgb(26, 26, 26);
+}
+.botao {
+    --bg: #000;
+    --hover-bg: rgb(83, 81, 71);
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+}
+.botao:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.botao:active {
+    transform: translate(0);
+    box-shadow: none;
+}
+
+#numDisciplinas {
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    min-height: 300px;
+    border: 2px solid red;
+    justify-content: space-between;
+}
+strong {
+    color: rgb(113, 114, 114);
+}
+.container {
+    margin-top: 1vw;
+    width: 100vw; 
+    display: flex; 
+    justify-content: center;
+}
+
+.Container-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 998px;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    min-height: 300px;
+    justify-content: space-between;
+    max-height: 580px; 
+}
+
+.card-titulo{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr;
+    
+    
+}
+.card-titulo h1{
+    color: rgb(255, 255, 255);
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+}
+.card {
+    margin-bottom: 50%;
+    padding: 2rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0,.6);
+}

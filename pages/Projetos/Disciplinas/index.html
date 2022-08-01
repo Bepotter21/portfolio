@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coeficiente</title>
+
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="Container-box">
+                <div class="card-box">
+                    <div class="card-titulo">
+                        <h1>Coeficiente</h1>
+                    </div>
+                    <div class="card">
+                        <form action="index.html">
+                            <label for="disciplinas">
+                                <strong>Disciplina 1</strong>
+                            </label>
+                            <input type="text" name="disciplina1" id="disciplina1"><br>
+                            <label for="disciplinas">
+                                <strong>Disciplina 2</strong>
+                            </label>
+                            <input type="text" name="disciplina2" id="disciplina2"><br>
+                            <label for="disciplinas">
+                                <strong>Disciplina 3</strong>
+                            </label>
+                            <input type="text" name="disciplina3" id="disciplina3"><br>
+                            <label for="disciplinas">
+                                <strong>Disciplina 4</strong>
+                            </label>
+                            <input type="text" name="disciplina4" id="disciplina4"><br>
+                            <label for="disciplinas">
+                                <strong>Disciplina 5</strong>
+                            </label>
+                            <input type="text" name="disciplina5" id="disciplina5"><br>
+                            <input class="botao" type="submit" onclick="calcular();" value="Calcular">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function mostracampos()
+            {
+                disciplinas = parseInt(document.getElementById("disciplinas").value);
+                if (disciplinas == 0)
+                {
+                    document.write("<h3>Nem uma disciplina cursada</h3>");
+                }
+                else
+                {
+                    if(disciplinas > 10)
+                    {
+                        document.write("<h3>Excedeu o número máximo de disciplinas cadastradas<h3>")
+                        exit;    
+                    }
+                }
+                {	
+                    cont = 1;
+                    document.write("<form>")
+                    while(cont <= disciplinas)
+                    {
+                        document.write("<h3><label> for='disciplina"+cont+"'> Disciplina"+cont+" </label>");
+                        document.write("<input id='disciplina"+cont+"'></h3>");
+
+                        cont++;
+                    }
+                    document.write("<button 'type='button' onclick='calcular();'> Calcular </button>");
+                    document.write("</form>");
+                    document.write("<h2 id='resultado'></h2>");
+                }
+            }
+        </script>
+        <script src="js/calcular.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Livros e eBooks totalmente gratuitos. Leia online antes em português (PT-BR) os Livros, Mangás e HQs mais lidos de ação, romance, fantasia entre outros!" />
+        <meta property="og:description"content="Livros e eBooks totalmente gratuitos. O maior acervo em livros, Mangas e HQs para todas as idades e para todos os gostos." />
+
+        <link rel="icon" href="assets/images/layout/logo-icon.png">
+
+        <link rel="stylesheet" href="assets/css/reset.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/barra.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/responsive.min.css" type="text/css">
+
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+
+        <title>Livros Livres</title>
+                
+    </head>
+    <body class="page-index logged-in">
+        <div id="overlay"></div>
+
+        <!-- TOPNAV -->
+        <div id="topnav" class="nav-down">
+            <div class="main-menu-xs">
+                <a href="index.html" class="active" title="Ir para a Home do site!">
+                    <h1>Home</h1>
+                </a>
+                <a href="livros.html"  title="Listagem de Livros online">
+                    <h1>Livros</h1>
+                </a>
+                <a href="grupo.html"  title="Grupo da Apresentação">
+                    <h1>Grupo</h1>
+                </a>
+            </div>
+            <div class="container">
+                <div class="navbar-brand hidden-xs">
+                    <a href="index.html" data-target="#menu-index" title="Ir para a Home do site"></a>
+                </div>
+
+                <div class="nav">
+                    <ul class="main-menu hidden-xs">
+                        <li >
+                            <a href="livros.html" data-target="#menu-titulos" title="Listagem de Livros e Mangás online">
+                                <h1>Livros</h1>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="grupo.html" data-target="#menu-grupos" title="Grupo da Apresentação">
+                                <h1>Grupo</h1>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-brand-xs visible-xs">
+                        <a href="/" class="brand-expanded" title="LivrosLivres"></a>
+                    </div>
+
+                    <!--Search-->
+                    <div class="search ui-widget" style="width: 40px">
+                        <input type="text" class="form-control ui-autocomplete-input" id="searchInput" autocomplete="off" style="width: 807px;">
+                        <button type="submit" class="btn-search"></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- END TOPNAV -->
+        <!-- SUB TOPNAV -->
+        <div id="subtopnav">
+            <div class="container">
+                <div class="wrap">
+                    <ul id="menu-index" class="navo native">
+                        <li><a href="#destaques" class="page-scroll" title="Destaques"><span>Destaques</span></a></li>
+                        <li><a href="#top-series" class="page-scroll" title="Mangás mais lidos"><span>Mangás</span></a></li>
+                        <li><a href="#lancamentos" class="page-scroll" title="Lançamentos recentes"><span>Lançamentos</span></a></li>
+                    </ul>
+                    <ul id="menu-serie" >
+                        <li class="active">
+                            <a href="#" class="toggle-author" data-target="#series-data" title="Informações sobre o mangá ">
+                                <span>Informações do Livro</span>
+                            </a>
+                        </li>
+                                    </ul>
+                    <ul id="menu-contato" >
+                        <li><a href="#dmca" class="page-scroll"><span>DMCA (English)</span></a></li>
+                        <li><a href="#terms" class="page-scroll" title="Termos de Uso"><span>Termos de Uso</span></a></li>
+                        <li><a href="#politica" class="page-scroll" title="Política de Privacidade"><span>Política de Privacidade</span></a></li>
+                    </ul>
+                    <ul id="menu-titulos" >
+                        <li >
+                            <a href="livros.html" data-method="alphabetically" title="Todos os Livros do site"><span>Todos (A-Z)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <!-- SUB TOPNAV -->
+
+        <!-- DESTAQUES -->
+        <div id="destaques" style="max-height:280px;">
+            <div class="bx-wrapper" style="max-width: 100%;">
+                <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 210px; bottom: -58px;">
+                    <ul class="bxslider" style="width: auto; position: relative;">
+                        <li data-featured-slider-item style="float: none; list-style: none; position: relative; width: 1903px; z-index: 1; display: list-item;">
+                            <div class="destaque-wrap">
+                                <div class="destaque-image">
+                                    <img src="assets/images/layout/capa1.gif">
+                                </div>
+                            </div>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="bx-controls"></div>
+            </div>
+            <div class="destaque-tags">
+                <div class="wrap">
+                    <ul id="bx-pager">
+                        <li data-featured-slider-pager-item="">
+                            <a href="#" data-slide-index="2">
+                                <span class="name"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="wraper">
+            <div class="container">
+                
+            <div id="type-switcher">
+                <ul class="types-list">
+                    <li class="type" data-type="manga">
+                        <a href="livros.html">
+                            <span>Mangás</span>
+                        </a>
+                    </li>
+                    <li class="type" data-type="livro">
+                        <a href="livros.html">
+                            <span>livros</span>
+                        </a>
+                    </li>
+                    <li class="type active" data-type="hqs">
+                        <a href="livros.html">
+                            <span>HQs</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="populares-semana" class="container-box">
+                <div class="main-bg-image"></div>
+                <div class="pattern-x"></div>
+                <div class="content-wraper touchcarousel"> 
+                    <h2>Destaques</h2>
+                    <a href="livros.html" class="arrow" title="Livros em Destaques">
+                        <img src="assets/images/layout/arrow.png" alt="arrow" />
+                    </a>
+                    <div class="rank-list rankcarousel" style="clear:both; overflow: visible;">
+                        <div class="touchcarousel-wrapper grab-cursor">
+                            <ul class="top-series touchcarousel-container rank-list-container" style="width: 2603px; left: 45px;">
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://www.amures.org.br/uploads/1521/arquivos/1348605_A_Culpa_E_Das_Estrelas___John_Green.pdf" title="Leia A culpa é das estrelas Online!">
+                                            <span class="series-title">
+                                                <h1>A Culpa é das Estrelas</h1>
+                                            </span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/livros/dasestrelas.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tijucas.sc.gov.br/conteudo/noticias/4374/a-sutil-arte-de-ligar-o-foda-se-mark-manson.pdf" title="Leia A sutil arte de ligar o f*da-se Online!">
+                                            <span class="series-title">
+                                                <h1>A Sutil Arte de Ligar o F*da-se</h1>
+                                            </span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/livros/sutilarte.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://clubdelivros.files.wordpress.com/2014/02/ameninaqueroubavalivros.pdf" title="Leia A Menina que Roubava Livros Online!">
+                                            <span class="series-title">
+                                                <h1>A Menina que Roubava Livros</h1>
+                                            </span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/livros/roubavalivro.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://www.intrinseca.com.br/upload/livros/1%C2%BACAP_OLabirintoDeFauno.pdf" title="Leia O Labirinto do Fauno Online!">
+                                            <span class="series-title">
+                                                <h1>O Labirinto do Fauno</h1>
+                                            </span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/livros/OLabirintodoFauno.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="assets/library/A Cacada Pelo Wolverine.pdf" title="Leia A Caçada Pelo Wolverine Online!">
+                                            <span class="series-title">
+                                                <h1>A Caçada Pelo Wolverine</h1>
+                                            </span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/hqs/ACacadaPeloWolverine.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="assets/library/A Piada Mortal.pdf" title="Leia A Piada Mortal">
+                                            <span class="series-title">
+                                                <h1>A Piada Mortal</h1>
+                                            </span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/hqs/APiadaMortal.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="assets/library/Lanternas Verdes.pdf" title="Leia Lanternas Verdes">
+                                            <span class="series-title">
+                                                <h1>Lanternas Verdes</h1>
+                                            </span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/hqs/LanternasVerdes.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="assets/library/Supergirl.pdf" title="Leia SuperGirl">
+                                            <span class="series-title">
+                                                <h1>SuperGirl</h1>
+                                            </span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/hqs/SuperGirl.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- LEFT SIDE -->
+        <div id="left-side">
+            <!-- LANÇAMENTOS -->
+            <div id="lancamentos" class="tag-container left-container">
+            <div class="main-bg-image"></div>
+            <div class="main-bg-pattern"></div>
+        <!-- CONTENT WRAPER -->
+            <div class="content-wraper"> 
+                <a href="livros.html" title="Últimas atualizações de Livros">
+                <h2> Lista de Lançamentos <img src="assets/images/layout/arrow.png" alt="Ícone arrow" class="mp-icon arrow-icon right" /> </h2>
+                </a>
+        <!-- LANÇAMENTO HOJE -->
+                <div id="recent_releases">
+                </div>
+                <div class="date-tag menu-tag hoje">
+                    <span>hoje</span>
+                </div>
+                <div id="lancamento-hoje" class="lancamento hoje"> 
+                    <ul class="lancamentol">
+                        <li>
+                            <div class="cover-image">
+                                <picture>
+                                    <img src="assets/images/livros/luzes.jpg">
+                                </picture>  
+                                <a href=" " class="link-block" title="Ler Luzes do Norte" style="display: block; height: 100% !important"></a> 
+                            </div>
+                            <div class="lancamento-desc">
+                                <a href=" " title="Ler Luzes do Norte">
+                                    <span class="lancamento-title">Luzes do Norte</span>
+                                    <details>
+                                        <summary>Sinopse</summary>
+                                        <p>Luzes do Norte é o livro de estreia de Giulianna Domingues, uma aventura intensa e cheia de reviravoltas, com uma protagonista que se recusa a jogar pelas regras dos outros. Entre ursos assustadores, florestas nevadas, mistérios e intrigas, Dimitria tem uma única missão: proteger Aurora van Vintermer. Custe o que custar.</p>
+                                    </details>
+                                </a>   
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover-image">
+                                <picture>
+                                    <img src="assets/images/livros/cinderela.jpg">
+                                </picture>  
+                                <a href=" " class="link-block" title="Em Busca De Cinderela Em Busca Da Perfeição Online" style="display: block; height: 100% !important"></a> 
+                            </div>
+                            <div class="lancamento-desc">
+                                <a href=" " title="Ler Em Busca De Cinderela Em Busca Da Perfeição">
+                                    <span class="lancamento-title">Em Busca de Cinderela Em Busca da Perfeição</span>
+                                    <details>
+                                        <summary>Sinopse</summary>
+                                        <p>Um encontro despretensioso no escuro e uma confissão de amor inesperada: seria a narrativa perfeita, não fosse tudo faz-de-conta. Embarque – e se apaixone - nessa história de amor nada convencional, cheia de altos e baixos e finais tão felizes quanto reais, com personagens vistos anteriormente nos livros da série Hopeless.</p>
+                                    </details>
+                                </a>   
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover-image">
+                                <picture>
+                                    <img src="assets/images/livros/cabeca.jpg">
+                                </picture>  
+                                <a href=" " class="link-block" title="Cabeça Fria, Coração Quente" style="display: block; height: 100% !important"></a> 
+                            </div>
+                            <div class="lancamento-desc">
+                                <a href=" " title="Ler Cabeça Fria, Coração Quente">
+                                    <span class="lancamento-title">Cabeça Fria, Coração Quente</span>
+                                    <details>
+                                        <summary>Sinopse</summary>
+                                        <p>Escrito em primeira pessoa pela equipe técnica liderada pelo treinador Abel Ferreira, a obra traz as experiências e os desafios enfrentados pelos profissionais portugueses ao longo de seus 13 primeiros meses no futebol brasileiro, com revelações inéditas sobre o pensamento, a filosofia e os métodos de trabalho da comissão</p>
+                                    </details>
+                                </a>   
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover-image">
+                                <picture>
+                                    <img src="assets/images/livros/pacto.jpg">
+                                </picture>  
+                                <a href=" " class="link-block" title="O Pacto Da Branquitude" style="display: block; height: 100% !important"></a> 
+                            </div>
+                            <div class="lancamento-desc">
+                                <a href=" " title="Ler O Pacto da Branquitude">
+                                    <span class="lancamento-title">O Pacto da Branquitude</span>
+                                    <details>
+                                        <summary>Sinopse</summary>
+                                        <p>Neste livro poderoso, Cida Bento ― eleita em 2015 pela The Economist uma das cinquenta pessoas mais influentes do mundo no campo da diversidade ― denuncia e questiona a universalidade da branquitude e suas consequências nocivas para qualquer alteração substantiva na hierarquia das relações sociais.</p>
+                                    </details>
+                                </a>   
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover-image">
+                                <picture>
+                                    <img src="assets/images/livros/hobbit.jpg">
+                                </picture>  
+                                <a href=" " class="link-block" title="O Hobbit" style="display: block; height: 100% !important"></a> 
+                            </div>
+                            <div class="lancamento-desc">
+                                <a href=" " title="Ler O Hobbit">
+                                    <span class="lancamento-title">O Hobbit</span>
+                                    <details>
+                                        <summary>Sinopse</summary>
+                                        <p>O Hobbit conta a história de Bilbo Bolseiro, um Hobbit pacato e satisfeito cuja vida vira de cabeça para baixo quando ele se junta ao mago Gandalf e a treze anões em sua jornada para reaver um tesouro roubado.</p>
+                                    </details>
+                                </a>   
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover-image">
+                                <picture>
+                                    <img src="assets/images/hqs/OJusticeiro.jpg">
+                                </picture>  
+                                <a href="assets/library/O Justiceiro.pdf " class="link-block" title="O Justiceiro" style="display: block; height: 100% !important"></a> 
+                            </div>
+                            <div class="lancamento-desc">
+                                <a href="assets/library/O Justiceiro.pdf" title="Ler O Justiceiro">
+                                    <span class="lancamento-title">O Justiceiro</span>
+                                    <details>
+                                        <summary>Sinopse</summary>
+                                        <p>Há uma nova droga experimental nas ruas, capaz de transformar pessoas comuns em soldados enraivecidos, e os agentes Ortiz e Henderson da agência norte-americana de combate a entorpecentes querem desbaratar a misteriosa facção conhecida como Condor, responsável pela disseminação do narcótico. O problema é que as atividades criminosas da quadrilha também chamaram atenção do Justiceiro, colocando-o em confronto direto com ambos os grupos. (Punisher 1-6)</p>
+                                    </details>
+                                </a>   
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover-image">
+                                <picture>
+                                    <img src="assets/images/hqs/AAscensaoDeThanos.jpg">
+                                </picture>  
+                                <a href="assets/library/A Ascensao de Thanos.pdf" class="link-block" title="O Justiceiro" style="display: block; height: 100% !important"></a> 
+                            </div>
+                            <div class="lancamento-desc">
+                                <a href="assets/library/A Ascensao de Thanos.pdf" title="Ler A Ascensão de Thanos">
+                                    <span class="lancamento-title">A Ascensão de Thanos</span>
+                                    <details>
+                                        <summary>Sinopse</summary>
+                                        <p>Neste conto de tragédia, destino e manipulação, Thanos, o flagelo do cosmo, se revela um conquistador incomparável. De onde veio este semideus da morte e da destruição? E, mais importante: o que ele quer? Descubra como uma jornada de amor verdadeiro pode gerar um rio de sangue capaz de alterar não apenas a vida de um garoto, mas também a galáxia e a natureza do próprio Universo Marvel!</p>
+                                    </details>
+                                </a>   
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cover-image">
+                                <picture>
+                                    <img src="assets/images/hqs/AOrigemDeGalactus.jpg">
+                                </picture>  
+                                <a href="assets/library/A origem de Galactus.pdf" class="link-block" title="O Justiceiro" style="display: block; height: 100% !important"></a> 
+                            </div>
+                            <div class="lancamento-desc">
+                                <a href="assets/library/A origem de Galactus.pdf" title="Ler A origem de Galactus">
+                                    <span class="lancamento-title">A Origem de Galactus</span>
+                                    <details>
+                                        <summary>Sinopse</summary>
+                                        <p>Originalmente chamado de Galan no planeta Taa, Galactus é o único sobrevivente do Big Crunch que destruiu o universo anterior, acontecido antes do Big Bang que gerou o Universo Marvel atual (o "nosso" universo). Galan era um explorador do espaço investigando o iminente fim do universo.</p>
+                                    </details>
+                                </a>   
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!-- CONTENT WRAPER -->
+            </div>
+        </div>
+        <!-- END LANÇAMENTOS -->
+        <!-- RIGHT SIDE -->
+        <div id="right-side">
+        <!-- PUB TOPO -->
+        
+        
+
+            <!-- TOP SERIES -->
+            <div id="top-series" class="container-box">
+            <div class="main-bg-image"></div>
+            <div class="pattern-x"></div>
+                <div class="content-wraper touchcarousel">
+                    <h2>Mangás Mais Lidos</h2>
+                    <a href="livros.html" class="arrow" title="Mangás Mais Lidos">
+                        <img src="assets/images/layout/arrow.png" alt="arrow" />
+                    </a>
+                    <div class="rank-list rankcarousel" style="clear:both; overflow: visible;">
+                        <div class="touchcarousel-wrapper grab-cursor">
+                            <ul class="top-series touchcarousel-container rank-list-container" style="clear: both; width: 550px; left: 30px;">
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/23/tales-of-demons-and-gods" title="Leia Tales of Demons and Gods Online!"
+                                        ><span class="series-title"><h1>Tales of Demons</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets//images/mangas/TalesofDemonsandGods.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/1/solo-leveling" title="Leia Solo Leveling Online!"
+                                        ><span class="series-title"><h1>Solo Leveling</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets//images/mangas/sololeveling.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/160/tokyo-revengers" title="Leia Tokyo Revengers Online!"
+                                        ><span class="series-title"><h1>Tokyo Revengers</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets//images/mangas/TokyoRevengers.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/38/kimetsu-no-yaiba" title="Leia Kimetsu no Yaiba Online!"
+                                        ><span class="series-title"><h1>Kimetsu no Yaiba</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/KimetsunoYaiba.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/22/boku-no-hero-academia" title="Leia Boku no Hero Academia Online!"
+                                        ><span class="series-title"><h1>Boku no Hero Academia</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/BokuNoHeroAcademia.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/2/one-piece" title="Leia One Piece Online!"
+                                        ><span class="series-title"><h1>One Piece</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/OnePiece.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/25/black-clover" title="Leia Black Clover Online!"
+                                        ><span class="series-title"><h1>Black Clover</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/BlackClover.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/1265/jujutsu-kaisen" title="Leia Jujutsu Kaisen Online!"
+                                        ><span class="series-title"><h1>Jujutsu Kaisen</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/JujutsuKaisen.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/24/one-punch-man" title="Leia One Punch-Man Online!"
+                                        ><span class="series-title"><h1>One Punch-Man</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/OnePunch-Man.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/156/the-beginning-after-the-end" title="Leia The Beginning After the End Online!"
+                                        ><span class="series-title"><h1>The Beginning After the End</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/TheBeginningAftetheEnd.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/9/shingeki-no-kyojin" title="Leia Shingeki no Kyojin Online!"
+                                        ><span class="series-title"><h1>Shingeki no Kyojin</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/ShingekinoKyojin.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/66/bleach" title="Leia Bleach Online!"
+                                        ><span class="series-title"><h1>Bleach</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/Bleach.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/664/the-great-mage-returns-after-4000-years" title="Leia The Great Mage Returns After 4000 Years Online!"
+                                        ><span class="series-title"><h1>The Great Mage Returns</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/TheGreatMageReturns.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/102/the-last-human" title="Leia The Last Human Online!"
+                                        ><span class="series-title"><h1>The Last Human</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/TheLastHuman.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/39/berserk" title="Leia Berserk Online!"
+                                        ><span class="series-title"><h1>Berserk</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/Berserk.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="touchcarousel-item">
+                                    <div class="item">
+                                        <a href="https://tsukimangas.com/obra/157/spyfamily" title="Leia SPYxFAMILY Online!"
+                                        ><span class="series-title"><h1>SPYxFAMILY</h1></span>
+                                        <div class="cover-image">
+                                            <picture>
+                                                <img src="assets/images/mangas/SPYFAMILY.jpg" referrerpolicy="no-referrer"/>
+                                            </picture>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TOP SERIES -->
+            <div class="container-box box-calhaw ad-box" style="margin-top:-15px; padding-top:1px;">
+            <div class="main-bg-image" style="background-size: unset;"></div>
+            <div class="pattern-stripes-right"></div>
+            </div>
+        </div>
+        <div id="social-media">
+            <a href="#" class="back-top" title="TOPO">TOPO <img src="assets/images/layout/arrow-top.png" alt="topo" /></a>
+            <p>Livros Livres &copy; 2022</p>
+            <hr>
+            <div class="recaptcha-footer-container">
+                <p class="recaptcha-footer">
+                    This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.
+                </p>
+            </div>
+        </div>
+        </div> 
+        <!-- CONTAINER -->
+        </div>
+
+        <link rel="stylesheet" href="assets/css/touchcarousel.min.css" type="text/css">
+
+        <script src="assets/js/touchcarousel.js" type="text/javascript"></script>
+        <script src="assets/js/custom.js" type="text/javascript"></script>
+
+    </body>
+</html>

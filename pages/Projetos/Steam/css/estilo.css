@@ -1,0 +1,38 @@
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+a {
+  text-decoration: none;
+  color: #c8cad1;
+}
+body {
+  background-color: #231f20;
+  font-style: Arial;
+  margin-left: 10px;
+  color: whitesmoke;
+  min-height: 100%;
+}
+.intro-steam {
+  font-size: 18px;
+  font-style: Arial;
+  color: whitesmoke;
+  text-align: center;
+  margin-left: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.911);
+  padding: 8px;
+}
+.loja {
+  font-size: 21px;
+  margin-left: 15px;
+}
+h2 {
+  margin-left: 15px;
+  font-size: 20px;
+}
+ol {
+  color: whitesmoke;
+}
+figure {
+  font-size: 20px;
+}

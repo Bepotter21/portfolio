@@ -1,0 +1,295 @@
+@media (min-width: 541px) {
+  html {
+    min-width: 540px;
+  }
+  #topnav .navbar-brand a {
+    background-position: center -31px;
+    height: 35px;
+    width: 162px;
+  }
+  #topnav .nav li {
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+  }
+  #topnav .search button {
+    margin: 5px;
+  }
+  #subtopnav .wrap {
+    overflow-x: hidden;
+  }
+  #subtopnav ul li a {
+    font-size: 15px;
+    padding: 0 12px;
+  }
+  #destaques .chapter-info {
+    display: block;
+  }
+  #destaques .featured-list .chapter-info {
+    max-width: 190px;
+  }
+  #destaques .featured-list li:nth-child(2n - 1) {
+    margin-right: 10px;
+  }
+  #social-media li a {
+    width: 80px;
+  }
+  #destaques .destaque-tags ul li a {
+    font-size: 15px;
+    margin: 8px 0 0;
+  }
+  #destaques .destaque-tags ul li a span.number {
+    font-size: 17px;
+  }
+  #destaques .destaque-tags .wrap {
+    overflow-x: hidden;
+  }
+  #destaques .featured-list li:nth-child(2n-1) {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  #subtopnav ul li a {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+  #clock-slider {
+    display: block;
+  }
+  #populares-semana .main-bg-image {
+    background-size: cover;
+  }
+  #populares-semana.container-box {
+    margin-bottom: 8px;
+    padding-bottom: 25px;
+  }
+  #homepub {
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .container-box .pattern-stripes-right {
+    background: hsla(0, 0%, 100%, 0.5) url("../images/layout/pattern-right.png");
+  }
+  .container-box .pattern-stripes-left {
+    background: hsla(0, 0%, 100%, 0.5) url("../images/layout/pattern-left.png");
+  }
+  #left-side {
+    float: left;
+  }
+  #left-side,
+  #right-side {
+    margin-top: 8px;
+    width: calc(50% - 10px);
+  }
+  #right-side {
+    float: right;
+  }
+  .page-grupos-interna #social-media,
+  .page-index #social-media {
+    float: left;
+  }
+  #destaques .chapter-info,
+  #destaques .featured-link {
+    width: 25%;
+  }
+  #destaques-grupos .featured-link a svg,
+  #destaques .featured-link a svg {
+    position: relative;
+    top: 4px;
+  }
+  #destaques-grupos .featured-link a span,
+  #destaques .featured-link a span {
+    width: auto;
+  }
+  #destaques .destaque-tags ul li a {
+    font-size: 16px;
+    margin: 8px 2px 0;
+  }
+  #destaques .destaque-tags ul li a span.number {
+    font-size: 18px;
+  }
+  #destaques-grupos .featured-link {
+    width: 185px;
+  }
+  #destaques-grupos .featured-link a span {
+    display: inline;
+  }
+  #destaques-grupos .featured-link a svg {
+    top: 3px;
+  }
+  .container {
+    width: 750px;
+  }
+  #topnav .search {
+    -webkit-transition: opacity 0.2s linear;
+    opacity: 0.8 !important;
+    transition: opacity 0.2s linear;
+  }
+  #topnav .search.active,
+  #topnav .search:hover,
+  .mp-pusher a:hover {
+    opacity: 1 !important;
+  }
+}
+@media (min-width: 992px) {
+  #subtopnav ul li a {
+    font-size: 17px;
+    padding: 0 18px;
+  }
+  #destaques .chapter-info {
+    width: 32%;
+  }
+  #destaques .featured-link {
+    width: 25%;
+  }
+  #destaques .destaque-tags ul li a {
+    font-size: 17px;
+  }
+  #destaques .destaque-tags ul li a span.number {
+    font-size: 20px;
+  }
+  .container {
+    width: 970px;
+  }
+  #az-order li {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  #destaques .destaque-tags ul li a {
+    font-size: 18px;
+  }
+  #destaques .destaque-tags ul li a span.number {
+    font-size: 22px;
+  }
+  #destaques .featured-list li {
+    max-width: 570px;
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  #destaques .featured-list li:nth-child(2n-1) {
+    margin-right: 0;
+  }
+  #destaques .featured-list li {
+    max-width: 100%;
+    width: 100%;
+  }
+  #destaques .featured-list li .destaque-image {
+    background-position: bottom;
+  }
+}
+@media (max-width: 1024px) {
+  .hidden-s {
+    display: none !important;
+  }
+}
+@media (min-width: 1850px) {
+  #destaques .chapter-info {
+    width: 40%;
+  }
+  #destaques .featured-link {
+    width: 30%;
+  }
+}
+@media (max-width: 540px) {
+  #destaques-grupos .featured-link,
+  #destaques .destaque-wrap,
+  #destaques .featured-link {
+    background-image: none !important;
+  }
+  #destaques-grupos .featured-link {
+    width: 185px;
+  }
+  #destaques-grupos .featured-link a span {
+    display: inline;
+  }
+  #destaques-grupos .featured-link a svg {
+    top: 3px;
+  }
+  .main-bg-image {
+    opacity: 1;
+  }
+  .container-box .pattern-stripes-left,
+  .container-box .pattern-stripes-right,
+  .main-bg-image {
+    background-image: none;
+  }
+  .container-box .pattern-x,
+  .main-bg-pattern {
+    background: none;
+  }
+  #social-media li a {
+    background-image: none;
+  }
+  #lancamentos {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .container-box.default {
+    -webkit-box-shadow: 0 -3px 0 0 #656565, 0 1px 1px 0 #dcdcdc;
+    box-shadow: 0 -3px 0 0 #656565, 0 1px 1px 0 #dcdcdc;
+  }
+  .cover-image,
+  .page-series-interna .container-box .series-img img.cover {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  #contato .container-box.default,
+  #dmca .container-box.default {
+    -webkit-box-shadow: 0 1px 1px 0 #dcdcdc;
+    box-shadow: 0 1px 1px 0 #dcdcdc;
+  }
+  #contato .contato-text .body-reject,
+  #dmca .contato-text .body-reject {
+    margin-left: 0;
+  }
+}
+@media (min-width: 481px) {
+  .main-menu-xs {
+    display: none !important;
+  }
+  #topnav {
+    height: 60px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 70%;
+  }
+  #topnav .user-nav .login .user-icon {
+    fill: #fff;
+    height: 30px;
+    margin-right: 0;
+    top: 10px;
+  }
+  h1 {
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 4.5vw !important;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+  .content-wraper span.content-description {
+    font-size: 13px;
+  }
+  .navbar-brand-xs,
+  .visible-xs {
+    display: inherit;
+  }
+}
+@media (max-width: 360px) {
+  .main-menu-xs a {
+    margin: 0 3%;
+  }
+}
